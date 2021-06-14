@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML</title>
+	<!-- HTML -->
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<h1 id="heading">Dictionary</h1>
+		<div class="content">
+			<div id="search">
+				<input type="text/submit/hidden/button" name="text" id="text" placeholder="Search Word..." />
+				<button type="submit" id="submitBtn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#ffffff" viewBox="0 0 256 256">
+						<rect width="256" height="256" fill="none"></rect>
+						<circle cx="115.99805" cy="116" r="84" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></circle>
+						<line x1="175.39161" y1="175.40039" x2="223.99219" y2="224.00098" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></line>
+					</svg>
+				</button>
+			</div>
+			<div id="info">
+				<div class="word infoText">
+					<h2 class="h2">Word</h2>
+					<span id="word"></span>
+				</div>
+				<div class="definition infoText">
+					<h2 class="h2">Definition:</h2>
+					<span id="definition"></span>
+				</div>
+				<div class="example infoText">
+					<h2 class="h2">Example:</h2>
+					<span id="example"></span>
+				</div>
+				<div class="try infoText">
+					<h2>You Could Also Try:</h2>
+					<span id="try"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
