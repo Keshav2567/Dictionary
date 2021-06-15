@@ -9,7 +9,7 @@
 body {
 	height: 100vh;
 	width: 100vw;
-	background-color: #A100FF;
+	background-color: #ffffff;
 	background-attachment: fixed;
 }
 
@@ -21,7 +21,7 @@ body {
 #heading {
 	text-align: center;
 	font-size: 3rem;
-	color: white;
+	color: #a100ff;
 	padding: 1rem;
 	letter-spacing: 1px;
 }
