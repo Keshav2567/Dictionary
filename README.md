@@ -1,5 +1,4 @@
 # Dictionary
-![Lines of Code](https://img.shields.io/tokei/lines/github/Ayush4385/Dictionary?&style=for-the-badge)
 
 A Online web english dictionary made it html,css and js
 You can search for words using the search bar and get their definitons and examples
