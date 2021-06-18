@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HTML</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<!-- HTML -->
 	<!-- Custom Styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" media="all" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="container">
-		<h1 id="heading">Dictionary</h1>
+		<header>
+			<h1 id="heading">Dictionary</h1>
+			<div class="language">
+				<svg id="lang-icon" xmlns="http://www.w3.org/2000/svg" width="196" height="192" fill="#000000" viewBox="0 0 256 256">
+					<rect width="256" height="256" fill="none"></rect>
+					<polyline points="232 216 176 104 120 216" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+					<line x1="136" y1="184" x2="216" y2="184" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+					<line x1="88" y1="32" x2="88" y2="56" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+					<line x1="24" y1="56" x2="152" y2="56" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+					<path d="M120,56a96,96,0,0,1-96,96" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+					<path d="M61.46882,88.00088a96.03987,96.03987,0,0,0,90.52532,63.9658" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+				</svg>
+				<select name="lang" id="lang">
+					<option value="en_US">English</option>
+					<option value="hi">Hindi</option>
+					<option value="es">Spanish</option>
+					<option value="fr">French</option>
+					<option value="ja">Japanese</option>
+					<option value="ru">Russian</option>
+					<option value="en_GB">English (UK)</option>
+					<option value="de">German</option>
+					<option value="it">Italian</option>
+					<option value="ko">Korean</option>
+					<option value="pt-BR">Brazillian</option>
+					<option value="ar">Arabic</option>
+					<option value="tr">Turkish</option>
+				</select>
+				<p id="lang-name"></p>
+			</div>
+		</header>
 		<div class="content">
 			<div id="search">
 				<input type="text/submit/hidden/button" name="text" id="text" placeholder="Search Word..." />
@@ -48,24 +77,25 @@
 			</div>
 		</div>
 	</div>
+	<div class="footer-dark">
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3 item">
+						<div class="col-md-6 item text">
+							<h3>Dictionary</h3>
+							<p>This site is made to provide service to people.You can quickly know the meaning and use of any word from here.We don't store any of your data</p>
+						</div>
+						<div class="col item social">
+							<a href="https://github.com/keshav2567"><i class="fab fa-github"></i></a>
+							<a href="https://codepen.io/keshav2567"><i class="fab fa-codepen"></i></a></< /div>
+						</div>
+						<p class="copyright">Keshav and Ayush © 2021</p>
+						<p class="power">Powered by <a href="https://dictionaryapi.dev/">Free Dictionary API</a></p>
+					</div>
+		</footer>
+	</div>
 	<script src="main.js"></script>
-
-   <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        
-                    <div class="col-md-6 item text">
-                        <h3>Dictionary</h3>
-                        <p>This site is made to provide service to people.You can quickly know the meaning and use of any word from here.We don't store any of your data</p>
-                    </div>
-                    <div class="col item social"><a href="https://github.com/keshav2567"><i class="icon fas fa-github"></i></a><a href="#"><i class="icon fas fa-codepen"></i></a></</div>
-                </div>
-                <p class="copyright">Keshav and Ayush © 2021</p>
-            </div>
-        </footer>
-    </div>
 </body>
 
 </html>

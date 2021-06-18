@@ -10,5 +10,5 @@ TO run on local computer you can download  code or ise the following command.
 git clone https://github.com/Keshav2657/Dictionary
 cd Dictionary
 ```
-## Contributers
+## Contributions
 You are always welcome to contribute by makig a PR.
