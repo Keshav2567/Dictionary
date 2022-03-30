@@ -14,7 +14,7 @@ function buttonHandeler() {
 	//Creating a new XHR object
 	let xhr = new XMLHttpRequest();
 	//Changes the link according to the searched word
-	let link = `https://api.dictionaryapi.dev/api/v2/entries/en/` + text.value;
+	let link = `https://api.dictionaryapi.dev/api/v2/entries/en_US/` + text.value;
 
 	xhr.open('GET', link, true);
 
