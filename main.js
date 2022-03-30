@@ -1,5 +1,3 @@
-let lang = document.getElementById('lang');
-let languageName = document.getElementById('lang-name');
 let text = document.getElementById('text');
 let submitBtn = document.getElementById('submitBtn');
 let info = document.getElementById('info')
@@ -10,23 +8,18 @@ let example = document.getElementById('example');
 let tryDiv = document.querySelector('.try');
 let trySpan = document.getElementById('try');
 
-languageName.innerHTML = lang.value;
-lang.addEventListener('input', () => {
-	languageName.innerHTML = lang.value;
-})
-
 submitBtn.addEventListener('click', buttonHandeler);
 
 function buttonHandeler() {
 	//Creating a new XHR object
 	let xhr = new XMLHttpRequest();
 	//Changes the link according to the searched word
-	let link = `https://api.dictionaryapi.dev/api/v2/entries/${lang.value}/` + text.value;
+	let link = `https://api.dictionaryapi.dev/api/v2/entries/en/` + text.value;
 
 	xhr.open('GET', link, true);
 
 	xhr.onload = function() {
-		//Paeses the JSON text into readable object
+		//Parses the JSON text into readable object
 		let parsed = JSON.parse(this.responseText);
 
 		try {
