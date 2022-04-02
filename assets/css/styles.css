@@ -30,55 +30,25 @@ header #heading {
 	font-size: 2.5rem;
 	color: white;
 	padding: 1rem;
+	margin: auto;
 	letter-spacing: 1px;
-	width: 80%;
-}
-
-header .language {
-	display: grid;
-	grid-template-areas: 
-						'icon lang'
-						'lang-name lang-name';
-}
-
-header .language #lang-icon {
-	height: 1.5rem;
-	width: 1.5rem;
-	color: white;
-	padding: 0;
-	margin-right: .2rem;
-	grid-area: icon;
-}
-
-header .language #lang {
-	width: 1rem;
-	grid-area: lang;
-}
-
-header .language #lang-name {
-	width: 4rem;
-	margin-top: .5rem;
+	width: 50%;
 	text-align: center;
-	border: 0px solid black;
-	grid-area: lang-name;
-	color: white;
 }
 
 .content {
 	background-color: #fff;
 	border-radius: 20px;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
 	height: 100%;
-	width: 100%;
-	position: relative;
+	width: 60%;
 	padding: 1rem;
+	margin: auto;
 }
 
 #search {
 	position: relative;
 	display: block;
-	margin: auto;
+	margin: 3rem auto;
 	width: 90%;
 	display: flex;
 	justify-content: center;
@@ -249,4 +219,13 @@ svg {
 
 .footer-dark .power a:hover {
 	opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+	header #heading {
+		font-size: 1.5rem;
+	}
+	.content{
+		width: 100vw;
+  }
 }
